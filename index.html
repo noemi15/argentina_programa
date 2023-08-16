@@ -1,88 +1,41 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-
-    <title>Resumen del alumno</title>
+    <link rel="stylesheet" href="index.css">
+    
+    <title>Calculadora</title>
 </head>
 <body>
-    <!-- se da un titulo a la pagina-->
-    <header>   
-          <h1>Informacion del alumno</h1>
-    </header>
+    <div class="calculadora">
+        <div class="calculadoraDisplay">0</div>
+        <div class="calculadoraLlaves"> 
+          
+          <button id = "AC" class="boton accion" >AC</button>
+          <button id = "borrar" class="boton ">&larr;</button>
+          <button class="boton operaciones" >/</button>
+      
+          <button class="boton numero">7</button>
+          <button class="boton numero">8</button>
+          <button class="boton numero">9</button>
+          <button class="boton operaciones" >*</button>
+          <button class="boton numero">4</button>
+          <button class="boton numero">5</button>
+          <button class="boton numero">6</button>
+          <button class="boton operaciones" >-</button>
+          <button class="boton numero">1</button>
+          <button class="boton numero">2</button>
+          <button class="boton numero">3</button>
+          <button class="boton operaciones">+</button>
+          <button class="boton numero">0</button>
+          <button class="boton ">.</button>
+          
+          <button id = "igual" class="boton accion" >=</button>
+        </div>
 
-    <!--aca comienza el cuerpo de la pagina-->
-
-    <main>
-        <!--como son  datos especificos se diferencian con guiones-->
-        <article>
-            <h2>Datos Basicos</h2>
-            <ul>
-                <li><strong>Nombre:</strong> Noemi Moreno Gomero</li>
-                <li><strong>Edad:</strong> 36 </li>
-                <li><strong>Pais nacimiento:</strong> Perú</li>
-            </ul>
-        
-        </article>
-
-        <article>
-            <h2>Intereses</h2>
-            <ul>
-                <li>Diseño interior e exterior</li>
-                <li>Carpinteria</li>
-                <li>Manualidades</li>
-            </ul>
-        
-        </article>
-
-        <article>
-            <h2>Experiencias</h2>
-            <p>     Como experiencia laboral realicé trabajos de servicio tecnico y administración.</p>
-        
-        </article>
-
-    </main>
-    <br>
-    <br>
-
-    <aside>
-        <!--aca se le da un dato mas descontracturado-->
-        <h3>
-                 Para conocer  mas sobre mi pueden darle click a mi perfil de facebook
-        </h3>
-        <br>
-
-        <nav>
-                 <a href="https://www.facebook.com/noemi.moreno.50596">Mi perfil</a>
-        </nav>
-
-        <br>
-        <br>
-        <h3>     Para un futuro me gustaría realizar viajes tanto al exterior como en el interior del país, adivinen los lugares escogidos...  </h3>
-        <br>
-               <img src="coliseo-de-roma.jpg" alt="sobremi1"  width="304" height="242">
-       
-               <img src="calafate-perito-moreno-unaideaunviaje-9.jpg" alt="sobremi2"  width="304" height="242">
-        <br>
-        <br>
-        <br>
-        <h3>
-                  Para un poco de color, les dejo un video de mi pequeño terremoto
-        </h3>
-        <br><br>
-                       <video src="momentosfelices.mp4"  type="video/mp4" autoplay>Vacaciones!!!
-
-        </video> 
-    </aside>
-    <br>
-    <br>
-
-    <footer>
-        Argentina programa 4.0
-    </footer>
+    </div>
 
 </body>
 </html>
+<script src="index.js" ></script>
