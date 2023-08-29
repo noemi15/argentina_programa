@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="ppt.css">
+    <title>Piedra-Papel-Tijera</title>
+</head>
+<body>
+    <!-- titulo a la pagina-->
+    <h1>PIEDRA - PAPEL - TIJERA</h1>
+    <div class="container">
+
+         <!-- pedido de datos -->
+        <div id="presentacionId" class="presentarse">
+            <label for="nombre" >Ingresar nombre:   </label>
+            <input type="text" id="nombre" name="nombre" >
+             <br><br>
+            <input class ="boton" type="button" value="Empezar" id="ingresoNombre"><br><br>
+        </div>
+
+        <!-- bienvenida y dar opciones de juego-->
+        <div id="inicioId">
+            <div class="bienvenida">
+                <H3>
+                    <span>Bienvenido(a)</span> 
+                    <span id="cargaNombre"></span>
+                </H3>    
+            </div>
+                
+            <h3>Elige una opción:</h3>
+
+            <div class="opciones">
+                <input id= "piedra"  class = "opcion" type="image" src="piedra.png" alt="piedra" width="110" height="120">
+                <input id="papel" class = "opcion" type="image" src="papel.png" alt="papel" width="110" height="120">
+                <input id="tijera" class = "opcion" type="image" src="tijera.png" alt="tijera" width="110" height="120">
+            </div>
+        </div>
+       
+        <!-- marcador de puntajes -->
+        <div id="marcadorId" class="marcador">
+            <p>
+                <span  id="jugador" ></span>
+                <span class="diff" >  VS </span>
+                <span  id="pc">PC</span>
+            </p>
+            
+            <p>
+                <span   id="puntos-usuario">0</span>
+                <span id="combate" class="diff"> </span>
+                <span   id="puntos-computadora">0</span>
+            </p>
+
+            <p>
+                <span   id="eleccion-jugador"></span>
+                <span>  </span>
+                <span   id="eleccion-pc"></span>
+            </p>
+
+            <p  class="diff" id="msj-jugada" > </p>
+            
+        </div>
+        
+        <!-- proclamar ganador y reiniciar -->
+        <h3 class="diff final" id="msj-jugada-final" > </h3>
+        <br>
+        <button class="boton reinicio" id="reiniciar">Reiniciar juego</button>  
+        
+    </div>   
+    
+</body>
+</html>
+
+<script src="ppt.js"> </script>

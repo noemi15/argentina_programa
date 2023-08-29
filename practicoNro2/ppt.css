@@ -1,0 +1,141 @@
+/* Genera el estilo en la base */
+body{
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+    background-color:beige;
+    color:chocolate;
+    margin: 0;
+}
+
+/* Genera alineacion en el contexto */
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+/* Se genera separacion de bloques */
+.presentarse{
+    width: 450px;
+    color:chocolate; 
+}
+
+/* diseño titulo */
+h1 {
+    text-shadow: -8px 0px 7px rgb(65, 62, 6);
+    -webkit-text-stroke: 2px rgb(101, 97, 24);
+}
+
+/* diseño del pedido de info */
+label{
+    padding: 18px 18px 28px 10px;
+    display: inline-block; 
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: 600;
+}
+
+/* estilo de los bloques */
+input{
+    width: 40%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  color: #593129;
+}
+
+/* estilo de botones */
+.boton{ 
+    font-family:'Courier New', Courier, monospace;  
+    background-color: burlywood;
+    font-weight:bold ;
+    font-size: 15px; 
+}
+
+/* estilo al darle click al boton  */
+.boton:active {
+    background-color: rgb(216, 210, 197);
+  }
+
+/* estilo del saludo */
+.bienvenida{
+    border: 2px solid rgb(36, 15, 120);
+    padding: 2px 10px 2px 10px;
+    border-radius: 20px; 
+ 
+}
+/* separacion entre lineas */
+span{
+    margin:40px 40px 40px 40px ;
+}
+
+/* estilo para seleccionar piedra papel tijera */
+.opcion{
+    width: 100px;
+    height: 90px;
+    border-radius: 50%;
+    margin: 10px;
+    cursor:pointer
+}
+
+/* animacion al darle click  */
+.opcion:active {
+    background-color: rgb(84, 70, 140);
+    transform: scale(0.5);
+  }
+
+/* estilo al marcador de puntajes  */
+.marcador {
+    padding: 7px 40px 7px 40px;
+    border-radius: 20px;
+    font-weight: 600;
+    border: 2px solid rgb(36, 15, 120);
+    font-size: 20px;       
+}
+
+/* ocultar marcador   */
+#marcadorId {
+    display: none;
+}
+
+/* ocultar inicio */
+#inicioId{
+    display: none;
+}
+
+/* estilo al mesaje del ganador final  */
+.diff{
+    color:rgb(10, 10, 101)
+}
+
+/* animacion */
+@keyframes animar {
+   0%{ 
+    transform:scale(1.5);
+    }
+100%{
+    font-size: 50px;       
+    }
+}
+
+/* animacion al mensaje final */
+.final{
+  animation: animar 4s 5;  
+  padding: 50px 80px 80px 50px;
+}
+
+/* estilo al boton de reinicio */
+.reinicio{
+    width: 40%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px; 
+    color: #593129;
+    display: none;
+}
+
