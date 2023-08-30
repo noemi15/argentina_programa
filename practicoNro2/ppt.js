@@ -125,9 +125,7 @@ function jugadaFinal(){
             msjJugadaFinal.innerHTML = "🔥 ¡GANASTE EL JUEGO! 🔥";
         } else if (cantJuegosGanadosPc == 3) {
             msjJugadaFinal.innerHTML = "😭 ¡GANÓ LA PC!";
-        }/* else {
-            msjJugadaFinal.innerHTML = "😭 ¡GANARON, REVANCHA?!";
-        }*/
+        }
         inicio.style.display = "none";   
         reload.style.display = "block";
     } 

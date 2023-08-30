@@ -125,17 +125,19 @@ span{
 
 /* animacion al mensaje final */
 .final{
-  animation: animar 4s 5;  
+  animation: animar 4s infinite;  
   padding: 50px 80px 80px 50px;
+  font-size: 50px;
 }
 
 /* estilo al boton de reinicio */
-.reinicio{
+#reiniciar{
     width: 40%;
     padding: 8px;
     border: 1px solid #ccc;
     border-radius: 4px; 
     color: #593129;
     display: none;
+      
 }
 
